@@ -4,7 +4,11 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background: #00080a; /* fallback for old browsers */
+  width: 100vw;
+  background: black;
+  z-index: 0;
+
+  /* fallback for old browsers */
   /*  background: -webkit-linear-gradient(
     to right,
     #f64f59,
