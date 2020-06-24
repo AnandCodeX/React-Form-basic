@@ -1,15 +1,14 @@
 import React from "react";
 import "./App.css";
 import Form from "./components/Form/Form.js";
-import ImageFile from "./components/Form/PreviewImg";
-
+import FileUploader from "./components/Form/FileUploader"
 function App() {
   return (
     <>
       <div className="App">
         <Form />
         <br />
-        {/*         <ImageFile /> */}
+        <FileUploader />
         <br />
       </div>
     </>

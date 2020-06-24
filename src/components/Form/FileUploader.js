@@ -7,6 +7,7 @@ const FileUploader = (props) => {
   };
   const handleChange = (event) => {
     const fileUploaded = event.target.files[0];
+    console.log(`focus${fileUploaded}`);
     props.handleFile(fileUploaded);
   };
   return (

@@ -5,15 +5,16 @@
     #00ffe7
   );
   border-radius: 40px;
-  border-width: 10px;
-  background: linear-gradient(to top, #008aff, #00ffe7);
-  animation: animate 5s linear infinite;
-  z-index: 1;
+  border-width: 20px;
+  background: linear-gradient(to top, rgb(0, 138, 255), #00ffe7);
+  background-clip: padding-box;
+  animation: animate 50s linear infinite;
+  z-index: 0;
 }
 
 .hdr {
   border: 2px solid transparent;
-  box-shadow: 1px 3px 6px black, 1px 3px 6px whitesmoke;
+  box-shadow: 1px 3px 6px gray, 1px 3px 6px whitesmoke;
   border-radius: 10px;
   font-weight: bold;
   text-align: center;
@@ -23,14 +24,15 @@
 }
 
 .Form-body {
-  z-index: 2;
-  background: #131316;
+  background: #020202;
   font-family: "Times New Roman", Times, serif;
-  border: 2px transparent gray;
+  border: 10px solid rgb(7, 7, 7);
+  border-radius: 40px;
   width: 600px;
   padding: 10px;
-  margin: 10px;
+  margin: 6px;
   border-radius: 30px;
+  z-index: 5;
 }
 .Form-body .col {
   margin: 10px 5px;
@@ -115,4 +117,12 @@
 }
 .Form-body .file-field .butn .imgSelectBtn:active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.upbg {
+  background-color: black;
+  z-index: 7;
+}
+.updbg {
+  z-index: 10;
 }

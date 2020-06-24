@@ -15,14 +15,15 @@ class ImageFile extends React.Component {
     if (this.state.imageURI !== null)
       imgTag = (
         <div className="row">
-          <div className="small-9 small-centered columns picture" >
+          <div className="small-9 small-centered columns picture">
             <img
               className="thumbnail"
               width="200px"
               height="200px"
               style={{ border: "4px solid black" }}
               src={this.state.imageURI}
-            ></img>
+              alt="something"
+            />
           </div>
         </div>
       );
