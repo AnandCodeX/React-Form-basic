@@ -1,0 +1,118 @@
+.base {
+  box-shadow: 0px 5px 50px gray, 0px 5px 50px white;
+  border: linear-gradient(
+    animation=animate 5s linear infinite #008aff,
+    #00ffe7
+  );
+  border-radius: 40px;
+  border-width: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+  z-index: 1;
+}
+
+.hdr {
+  border: 2px solid transparent;
+  box-shadow: 1px 3px 6px black, 1px 3px 6px whitesmoke;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.Form-body {
+  z-index: 2;
+  background: #131316;
+  font-family: "Times New Roman", Times, serif;
+  border: 2px transparent gray;
+  width: 600px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+}
+.Form-body .col {
+  margin: 10px 5px;
+}
+
+.Form-body .col #lbl {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  font-weight: 200;
+  font-family: "Courier New", Courier, monospace;
+}
+.Form-body .col .dis input::placeholder {
+  color: white;
+  font-size: 15px;
+}
+.Form-body .col input {
+  border-radius: 5px;
+  border-color: gray;
+  box-shadow: 2px grey;
+  margin-left: 5px;
+  height: 20px;
+}
+.Form-body .col input::placeholder {
+  font-style: italic;
+  font-size: 10px;
+}
+@keyframes animate {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.Form-body .col textarea {
+  border-radius: 15px;
+  position: relative;
+  left: 40px;
+  top: 10px;
+  margin-left: 15px;
+  padding: 0px 10px 0px;
+}
+.Form-body .col textarea::placeholder {
+  padding-left: 30px;
+  font-style: italic;
+  font-size: 14px;
+  width: 250px;
+}
+
+.Form-body .file-field {
+  float: right;
+  width: 220px;
+  margin-top: 30px;
+}
+
+.Form-body .file-field .imag .imag-1 {
+  margin-left: 40px;
+  border: 2px solid gray;
+  border-radius: 6px;
+}
+.Form-body .file-field .butn .imgSelectBtn::before {
+  content: "Select Image";
+  display: inline-block;
+  background: whitesmoke;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.Form-body .file-field .butn .imgSelectBtn:hover::before {
+  border-color: black;
+}
+.Form-body .file-field .butn .imgSelectBtn:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}

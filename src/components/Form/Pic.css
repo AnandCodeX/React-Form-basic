@@ -1,0 +1,12 @@
+.picture img {
+  border: 4px solid black;
+}
+
+.uploadbttn {
+  width: auto;
+  height: auto;
+}
+.uploadbttn .uploadimg {
+  width: 150px;
+  height: 200px;
+}
