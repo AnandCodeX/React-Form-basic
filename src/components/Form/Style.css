@@ -42,7 +42,7 @@
   right: -2px;
   background: rgb(248, 245, 245);
   z-index: -2;
-  filter: blur(40px);
+  filter: blur(40px)  brightness(100%) contrast(200%);
 }
 .base::before,
 .base::after {
